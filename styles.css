@@ -1,0 +1,151 @@
+body{
+  height: 100%;
+}
+#navbar{
+background:red;
+  display:flex;
+position: fixed;
+  justify-content: flex-end;
+  width: 100%;
+  top:0px;
+  left:0px;
+  padding:10px;
+}
+
+navbar ul li{  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+
+navbar ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+navbar ul:hover{
+  border-radius: 5px;
+background-color: black;
+}
+navbar ul a:hover{
+text-decoration: underline;
+}
+#intro{  
+  background: #000;
+  margin:0;
+  height:550px;
+  top:10px;
+  padding:0;
+}
+
+
+
+#welcome-section{
+  margin-left:5%;
+  margin-top:8%;
+}
+#welcome-section h1{
+  padding-top: 130px;
+font-size: 50px;
+  color: white;
+font-family: Sans-serif
+}
+
+#welcome-section p{
+  color: white;line-height: 22px;
+  font-family: serif;
+}
+
+#welcome-section h1 span{
+  color: Red;
+}
+
+
+.me{
+  margin-top: -25%;
+margin-left: 60%;
+max-width: 20%;
+max-height: 20%;
+}
+.me:hover {
+  background: black;
+  left: 67;
+}
+
+#projects{
+  display: Flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.P-img{
+  border: black 5px solid;
+}
+
+.p_img1{
+  width: 100%;
+}
+
+
+a{ text-decoration: none;
+}
+
+
+
+#contact{
+  background: black;  
+border-bottom: red 5px solid;
+border-top: red 5px solid;
+}
+
+
+
+#contact h1{
+  color: white;
+  text-align: center;
+}
+
+#contact i{
+  color: white;
+  padding-right: 10px;
+  font-size: 28x;
+}
+
+#contact a{
+  color: white;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  font-size: 20px;
+  display: flex;
+  padding: 20px;
+}
+
+#contact a:hover{
+font-size: 30px;
+}
+
+.one11{
+background: black;
+height: 50px;
+color: white;
+font-size: 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.one11:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 815px){
+  #me4{
+      margin-top: -55%;
+      margin-left: 50%;
+      max-width: 2%;
+      height: 900%;
+    }
+
+    #projects{
+        display: flex;
+        flex-direction: column;
+    }
+}
