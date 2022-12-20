@@ -1,20 +1,22 @@
-body{
-  height: 100%;
-}
 #navbar{
 background:red;
   display:flex;
-position: fixed;
-  justify-content: flex-end;
+  position: fixed;
+  justify-content: space-between;
+  row-gap: 20px;
   width: 100%;
   top:0px;
   left:0px;
   padding:10px;
+
 }
 
-navbar ul li{  list-style: none;
+navbar ul li{  
+  list-style: none;
   display: inline-block;
-  margin: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
 }
 
 navbar ul li a{
@@ -23,13 +25,11 @@ navbar ul li a{
   font-size: 20px;
   font-weight: bold;
 }
-navbar ul:hover{
-  border-radius: 5px;
-background-color: black;
-}
+
 navbar ul a:hover{
 text-decoration: underline;
 }
+
 #intro{  
   background: #000;
   margin:0;
@@ -39,10 +39,9 @@ text-decoration: underline;
 }
 
 
-
 #welcome-section{
   margin-left:5%;
-  margin-top:8%;
+  margin-top:0%;
 }
 #welcome-section h1{
   padding-top: 130px;
@@ -136,16 +135,80 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 815px){
-  #me4{
-      margin-top: -55%;
-      margin-left: 50%;
-      max-width: 2%;
-      height: 900%;
-    }
+#logo{
+  width: 20%;
+}
 
-    #projects{
-        display: flex;
-        flex-direction: column;
+#menu_icon{
+  display: none;
+}
+
+#Items{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+@media (max-width: 768px){
+  #navbar{
+    height: 2rem;
+    position: fixed;
+    display: flex; 
+    justify-content: space-around;
+    background: red;
     }
+    #me4{
+      display: none;
+    }
+    #logoimg{
+      height: 40px;
+    }
+    #projects{
+      display: flex;
+      flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 576px){
+  #Items{
+    display: none;
+    justify-items: start;
+    align-items: flex-start;
+    border: #000 2px solid;
+  }
+
+  #Items ul{
+    height: 100%;
+    display: flex;
+    justify-items: start;
+    flex-direction: column;
+  }
+
+  #navbar{
+    position: fixed;
+  }
+
+  #logo{
+    padding: 2px;
+    border: #000 2px solid;
+  }
+  #logoimg{
+    height: 40px;
+  }
+
+  #menu_icon{
+    display: flex;
+    padding: 9px;
+    width: 10%;
+  }
+
+  #navbar #menu_icon:hover #Items{
+    display: flex;
+    background: blue;
+  }
+
+  
+
 }
