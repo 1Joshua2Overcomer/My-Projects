@@ -248,8 +248,6 @@ nav ul li{
         padding-top: 0;
         padding-left: 5px;
         padding-right: 5px;
-        height:150px;
-
     }
     
     #Logo{
@@ -261,6 +259,11 @@ nav ul li{
     #logoimg{
       height: 40px;
     }
+
+    #intro{  
+        height:auto;
+        width: fit-content;
+      }
   
     
   }
