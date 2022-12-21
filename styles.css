@@ -233,7 +233,7 @@ nav ul li{
     .img_22{
         display: flex;
         width: 100vw;
-        height: 180px;
+        height: 200px;
         justify-content: center;
         align-items: flex-end;
     }
