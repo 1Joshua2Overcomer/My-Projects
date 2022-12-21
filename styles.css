@@ -143,6 +143,10 @@ nav ul li{
       text-decoration: underline;
   }
 
+  .img_22{
+    display: none;
+  }
+
   /* Media Querry */ 
 
   @media (max-width: 768px){
@@ -202,7 +206,7 @@ nav ul li{
     }
 
     .nav.active{
-        height: 450px;
+        height: 250px;
     }
 
     .nav.active ul{
@@ -215,7 +219,7 @@ nav ul li{
         opacity: 0;
         transition: 0.5s;
         text-align: center;
-        margin: 80px auto 0 auto; 
+        margin: 20px auto 0 auto; 
     }
     nav ul li a{
         color: black;
@@ -225,7 +229,27 @@ nav ul li{
         text-decoration: none;
         margin-bottom: 12px;
     }
+
+    .img_22{
+        display: flex;
+        width: 100vw;
+        height: 180px;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    #Img_222{
+        width: 100px;
+        height: 120px;
+    }
     
+    
+    #welcome-section h1{
+        padding-top: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
     
     #Logo{
         padding: 15px;
