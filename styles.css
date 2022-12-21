@@ -1,214 +1,243 @@
-#navbar{
-background:red;
-  display:flex;
-  position: fixed;
-  justify-content: space-between;
-  row-gap: 20px;
-  width: 100%;
-  top:0px;
-  left:0px;
-  padding:10px;
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
 
 }
-
-navbar ul li{  
-  list-style: none;
-  display: inline-block;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0;
-}
-
-navbar ul li a{
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-navbar ul a:hover{
-text-decoration: underline;
-}
-
-#intro{  
-  background: #000;
-  margin:0;
-  height:550px;
-  top:10px;
-  padding:0;
-}
-
-
-#welcome-section{
-  margin-left:5%;
-  margin-top:0%;
-}
-#welcome-section h1{
-  padding-top: 130px;
-font-size: 50px;
-  color: white;
-font-family: Sans-serif
-}
-
-#welcome-section p{
-  color: white;line-height: 22px;
-  font-family: serif;
-}
-
-#welcome-section h1 span{
-  color: Red;
-}
-
-
-.me{
-  margin-top: -25%;
-margin-left: 60%;
-max-width: 20%;
-max-height: 20%;
-}
-.me:hover {
-  background: black;
-  left: 67;
-}
-
-#projects{
-  display: Flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
-}
-
-.P-img{
-  border: black 5px solid;
-}
-
-.p_img1{
-  width: 100%;
-}
-
-
-a{ text-decoration: none;
-}
-
-
-
-#contact{
-  background: black;  
-border-bottom: red 5px solid;
-border-top: red 5px solid;
-}
-
-
-
-#contact h1{
-  color: white;
-  text-align: center;
-}
-
-#contact i{
-  color: white;
-  padding-right: 10px;
-  font-size: 28x;
-}
-
-#contact a{
-  color: white;
-  text-shadow: 2px 2px 1px #1f1f1f;
-  font-size: 20px;
-  display: flex;
-  padding: 20px;
-}
-
-#contact a:hover{
-font-size: 30px;
-}
-
-.one11{
-background: black;
-height: 50px;
-color: white;
-font-size: 30px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.one11:hover{
-    text-decoration: underline;
-}
-
-#logo{
-  width: 20%;
-}
-
-#menu_icon{
-  display: none;
-}
-
-#Items{
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-
-@media (max-width: 768px){
-  #navbar{
-    height: 2rem;
-    position: fixed;
-    display: flex; 
-    justify-content: space-around;
+header{
     background: red;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    line-height: 5PX;
+    transition: 0.2s;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 20px;
+}
+
+#Logo{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+#logoimg{
+    border: black 2px solid;
+}
+/* Lower Body */
+#intro{  
+    background: #000;
+    margin:0;
+    height:550px;
+  }
+  
+  
+  #welcome-section{
+    margin-left:5%;
+  }
+  #welcome-section h1{
+    padding-top: 130px;
+    font-size: 50px;
+    color: white;
+    font-family: Sans-serif
+  }
+  
+  #welcome-section p{
+    color: white;
+    line-height: 22px;
+    font-family: serif;
+  }
+  
+  #welcome-section h1 span{
+    color: Red;
+  }
+  
+  
+  .me{
+    margin-top: -25%;
+  margin-left: 60%;
+  max-width: 20%;
+  max-height: 20%;
+  }
+  .me:hover {
+    background: black;
+    left: 67;
+  }
+  
+  #projects{
+    display: Flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .P-img{
+    border: black 5px solid;
+  }
+  
+  .p_img1{
+    width: 100%;
+  }
+  
+  
+  a{ text-decoration: none;
+  }
+  
+  
+  
+  #contact{
+    background: black;  
+  border-bottom: red 5px solid;
+  border-top: red 5px solid;
+  }
+  
+  #contact h1{
+    color: white;
+    text-align: center;
+  }
+  #contact i{
+    color: white;
+    padding-right: 10px;
+    font-size: 28x;
+  }
+  #contact a{
+    color: white;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    font-size: 20px;
+    display: flex;
+    padding: 20px;
+  }
+  
+  #contact a:hover{
+  font-size: 30px;
+  }
+  
+  .one11{
+  background: black;
+  height: 50px;
+  color: white;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .one11:hover{
+      text-decoration: underline;
+  }
+
+  /* Media Querry */ 
+
+  @media (max-width: 768px){
+    #navbar{
+      height: 2rem;
+      position: fixed;
+      display: flex; 
+      justify-content: space-around;
+      background: red;
+      }
+      #me4{
+        display: none;
+      }
+      
+      #projects{
+        display: flex;
+        flex-direction: column;
+      }
+      
+      nav ul li{
+        list-style: none;
+        padding: 15px;
     }
-    #me4{
-      display: none;
+    
+    #Logo{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
     }
+  }
+  
+  @media (max-width: 576px){
+    .SUb_menu{
+        display: block;
+        cursor: pointer;
+        padding: 15px;
+    }
+
+    .SUb_menu .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+
+    
+    nav{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: white;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav.active{
+        height: 450px;
+    }
+
+    .nav.active ul{
+        opacity: 1;
+    }
+
+    nav ul{
+        display: block;
+        width: fit-content;
+        opacity: 0;
+        transition: 0.5s;
+        text-align: center;
+        margin: 80px auto 0 auto; 
+    }
+    nav ul li a{
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        margin-bottom: 12px;
+    }
+    
+    
+    #Logo{
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    
     #logoimg{
       height: 40px;
     }
-    #projects{
-      display: flex;
-      flex-direction: column;
-    }
-    
-}
-
-@media (max-width: 576px){
-  #Items{
-    display: none;
-    justify-items: start;
-    align-items: flex-start;
-    border: #000 2px solid;
-  }
-
-  #Items ul{
-    height: 100%;
-    display: flex;
-    justify-items: start;
-    flex-direction: column;
-  }
-
-  #navbar{
-    position: fixed;
-  }
-
-  #logo{
-    padding: 2px;
-    border: #000 2px solid;
-  }
-  #logoimg{
-    height: 40px;
-  }
-
-  #menu_icon{
-    display: flex;
-    padding: 9px;
-    width: 10%;
-  }
-
-  #navbar #menu_icon:hover #Items{
-    display: flex;
-    background: blue;
-  }
-
   
-
-}
+    
+  }
