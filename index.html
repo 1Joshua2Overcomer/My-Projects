@@ -1,42 +1,51 @@
-<!doctype html>
-<html>
-  <head> 
-    <script src="https://kit.fontawesome.com/e585a31849.js" crossorigin="anonymous"></script>
-
-    <link rel = "Stylesheet" href="styles.css">
-    <title> My Portfolio Page </title>
-  </head>
-
-  <body>
-    
-     <navbar id = "navbar"> 
-      <div id="logo">
-        <a href="index.html">
-        <img src="A Logo.jpg" id="logoimg"></a>
-      </div>
-        
-      <div id="menu_icon">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      
-      <div id="Items">
-      <ul> 
-        <li><a href = "#welcome-section">Home</a></li>
-        <li><a href = "#welcome-section">About</a></li>
-        <li><a href= "#projects">View Jobs</a></li>
-        <li><a href = "#contact">Contact</a></li>
-      </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e585a31849.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="test.css">
+  <title>Test</title>
+</head>
+<body>
+  <header>
+    <div id="Logo">
+      <a href="index.html">
+        <img src="A Logo.jpg" id="logoimg" alt="Logo"></a>
     </div>
-  </navbar>
-    <div id = "intro">
+    <div class="SUb_menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <nav class="nav">
+      <ul> 
+        <li><a href = "#welcome-section"><i class="fa-duotone fa-house"></i>Home</a></li>
+        <li><a href = "#welcome-section"><i class="fa-duotone fa-phone"></i>About</a></li>
+        <li><a href= "#projects"><i class="fa-duotone fa-phone"></i>View Jobs</a></li>
+        <li><a href = "#contact"><i class="fa-duotone fa-phone"></i>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    SUb_menu = document.querySelector(".SUb_menu");
+    SUb_menu.onclick = function(){
+      nav = document.querySelector(".nav");
+      nav.classList.toggle("active");
+    }
+  </script>
+  <div id = "intro">
    
     <section id = "welcome-section">
-      <h1> 
-        Hi I'm Audu <span> Joshua </span> Adinoyi
+      <h1>
+        Hi I'm Audu <span> Joshua </span> Adinoyi 
         </h1> <p class ="office" style= "text-decoration: underline;"> A FRONT-END DEVELOPER </p><p> This is my Personal Portfolio Page <br> I Showcase the various Projects i have worked on Right here </p>
     </section>
   <div class = "me" id = "me4"> 
-      <img id = "me1" src="https://iili.io/gmRjzG.png" alt="gmRjzG.png">
+      <img id = "me1" src="https://iili.io/gmRjzG.png" alt="Profile Image">
     </div>
   </div>
   <div>
@@ -64,17 +73,14 @@ Documentary Page
     <div id = "contact">
       <h1> Let's Work Together
         </h1>
-<a href="https://web.facebook.com/audu.joshua.7712" target="_blank" class="btn contact-details"><i class="fa-brands fa-facebook"></i>Facebook</a>
+        <a href="https://web.facebook.com/audu.joshua.7712" target="_blank" class="btn contact-details"><i class="fa-brands fa-facebook"></i>Facebook</a>
 
-<a href="https://twitter.com/adinoyi_audu" target="_blank" class="btn contact-details"><i class="fa-brands fa-twitter"></i>Twitter</a>
-
-<a href="https://github.com/1Joshua2Overcomer" target="_blank" class="btn contact-details"><i class="fa-brands fa-github"></i>Github</a>
-
-
-<a href="https://facebook.com/freecodecamp" target="_blank" class="btn contact-details"><i class="fa-solid fa-envelope"></i>E-Mail:       empire4josh@gmail.com</a>
-        </div>
-
-
-    </body>
-  
-  </html>
+        <a href="https://twitter.com/adinoyi_audu" target="_blank" class="btn contact-details"><i class="fa-brands fa-twitter"></i>Twitter</a>
+        
+        <a href="https://github.com/1Joshua2Overcomer" target="_blank" class="btn contact-details"><i class="fa-brands fa-github"></i>Github</a>
+        
+        
+        <a href="https://facebook.com/freecodecamp" target="_blank" class="btn contact-details"><i class="fa-solid fa-envelope"></i>E-Mail:       empire4josh@gmail.com</a>
+                </div>
+</body>
+</html>
